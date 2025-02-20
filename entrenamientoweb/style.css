@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    /*los elementos no crezcan y respeten los anchos dados*/
+}
+
+body {
+    font-family: "Roboto";
+    /* Estilo de letra*/
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    /* Cambio de comportamiento de los elementos*/
+}
+
+p {
+    color: black;
+    /*Color de los parrafos*/
+}
+
+header {
+    padding: 15px 0;
+    /* Espacio hacia adentro del elemento*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+}
+
+footer.seccion {
+    background-color: black;
+    color: white;
+    padding-bottom: 0;
+}
+
+footer .barra-footer {
+    background-color: grey;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo-footer {
+    width: 100%;
+
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+footer .redes {
+    font-size: 30px;
+    display: flex;
+}
+
+footer .redes a {
+    margin: 0 7.5px;
+}
+
+header .container {
+    display: flex;
+    /* Aprovechar espacio del elemento del container*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .hamb {
+    display: none;
+}
+
+header .container .logo {
+    width: 100px;
+    /*Tamaño de los elementos en direccion x */
+}
+
+header .container nav a {
+    color: red;
+    text-decoration: none;
+    margin: 0 15px;
+    /* Espacio hacia afuera del elemento*/
+}
+
+.boton {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: none;
+}
+
+.boton.boton-rojo {
+    color: black;
+    background-color: red;
+    font-weight: bold;
+}
+
+.boton.boton-blanco {
+    color: red;
+    background-color: white;
+    border-radius: 15%;
+    font-weight: bold;
+
+}
+
+.boton.boton-negro {
+    color: white;
+    background-color: black;
+    border-radius: 15%;
+    font-weight: bold;
+}
+
+.boton.boton-negro:hover {
+    color: black;
+    background-color: white;
+    border-radius: 15%;
+    font-weight: bold;
+}
+
+.seccion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cuadrado-perfecto {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.cuadrado-perfecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.container-fluido {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna-33 {
+    width: 33.33%;
+}
+
+.columna-50 {
+    width: 50%;
+}
+
+.columna-25 {
+    width: 25%;
+}
+
+.empujar-50 {
+    margin-left: 50%;
+}
+
+.empujar-0 {
+    margin-left: 0;
+}
+
+#Inicio {
+    position: relative;
+}
+
+#Inicio img {
+    width: 100%;
+    display: block;
+}
+
+#Inicio .bloque-inicio {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    margin-left: -200px;
+}
+
+#Inicio .bloque-inicio h1 {
+    color: white;
+    font-size: 30px;
+}
+
+#Inicio .bloque-inicio p {
+    color: white;
+    font-size: 15px;
+}
+
+#Nosotros {
+    background-image: url(imagenes/latas.jpg);
+    background-size: cover;
+}
+
+#Nosotros p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    /*margin: 0;*/
+}
+
+#Servicios .bloque-servicio {
+    border: 1px solid gray;
+}
+
+
+#Servicios .bloque-servicio .bloque-img-servicio img {
+    width: 100%;
+}
+
+#Servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto {
+    padding-bottom: 55%;
+}
+
+#Servicios .bloque-servicio .bloque-contenido-servicio {
+    padding: 15px;
+}
+
+#Servicios .bloque-servicio .bloque-contenido-servicio h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#Galeria h4 {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#Galeria img {
+    filter: grayscale(1)
+}
+
+#Galeria .cuadrado-perfecto:hover img {
+    filter: grayscale(0)
+}
+
+#Galeria .cuadrado-perfecto:hover h4 {
+    display: none;
+}
+
+#Contactenos {
+    position: relative;
+}
+
+#Contactenos iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+}
+
+
+#Contactenos form {
+    padding: 60px;
+    background-color: red;
+}
+
+#Contactenos form .form-block {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#Contactenos form .form-block .form-control {
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#Contactenos form .form-block textarea {
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#Contactenos form .form-block.bloque-ultimo {
+    margin-bottom: 0;
+}
+
+@media(max-width: 767px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header .container nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease-in;
+        transform: translateX(100%);
+    }
+
+    header .container nav a {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    header .container .hamb {
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+
+    .container {
+        width: 100%;
+
+    }
+
+    .columna-mobile-100 {
+        width: 100%;
+    }
+
+    .empujar-mobile-0 {
+        margin-left: 0;
+    }
+
+    form .boton.boton-negro
+    {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .logo-footer{
+        width: 50%;
+    }
+
+    footer .redes
+    {
+        justify-content: center;
+    }
+
+    .sinpadding-mobile {
+        padding: 0;
+    }
+
+    .columna-mobile-50 {
+        width: 50%;
+    }
+
+    #Inicio {
+        height: 100vh;
+    }
+
+    #Inicio img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #Servicios .bloque-servicio{
+        margin-bottom: 15px;
+    }
+
+    #Contactenos iframe
+    {
+        position: relative;
+        height: 50vh;
+    }
+
+    #Contactenos{
+        padding: 0;
+    }
+
+}

@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    justify-content: space-aroundn;
+    align-items: center;
+    height: 100vh;
+}
+
+.caja{
+    border: solid black;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+#particular{
+
+}

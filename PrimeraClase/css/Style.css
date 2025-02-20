@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arriba{
+    background-color: yellow;
+}
+
+#unico{
+    background-color: blue;
+    color: black;
+}
+
+p{
+    background-color: green;
+    color: red;
+}
+
+#Foto{
+    margin: 30px;
+    border: solid red;
+    padding: 30px;
+}

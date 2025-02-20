@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "news news2 aside"
+    "footer footer aside";
+}
+
+aside{
+    grid-area: aside;
+    background-color: blue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+#news{
+    grid-area: news;
+    background-color: brown;
+}
+
+#news2{
+    grid-area: news2;
+    background-color: chocolate;
+}
+
+@media (max-width: 780px){
+    #contenedor{
+        grid-template-areas: 
+        "header header"
+        "news news2"
+        "aside aside"
+        "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

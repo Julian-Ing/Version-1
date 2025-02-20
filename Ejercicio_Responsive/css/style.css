@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: sans-serif;
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+#container-header{
+    width: 100%;
+}
+
+#encabezado {
+    background-image: url(/Ejercicio_Responsive/img/maceta.png);
+    background-repeat: no-repeat;
+    background-color: #cfd6cf;
+    background-position-x: center;
+    background-position-y: top;
+    padding: 50px;
+    margin: 30px;
+    height: 80vh;
+    box-shadow: 0 8px 8px -4px black;
+}
+
+
+#logo h3{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#opciones{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#opciones a{
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#button{
+    border: 2px solid black;
+    padding: 10px 5px;
+    background-color: #cfd6cf;
+    color: black;
+    text-transform: uppercase;
+}
+
+#encabezado #titulos{
+    font-size: 2em;
+    position: absolute;
+    top: 35%;
+    left: 51%;
+    width: 400px;
+    text-align: center;
+    margin-left: -200px;
+}
+
+#encabezado #titulos h1{
+    letter-spacing: 6px;
+    line-height: 1.5;
+}
+
+#encabezado #titulos h2{
+    font-size: 0.7em;
+}
+
+#encabezado #titulos hr{
+    border: 3px solid black;
+    width: 70px;
+    margin: 20px auto ;
+}
+
+#bloque-servicio{
+    background-color: #cfd6cf60;
+    height: 50vh;
+    margin: 10px;
+}
+
+#bloque-servicio #title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#bloque-servicio hr{
+    border: 3px solid black;
+    width: 70px;
+    margin: 20px auto ;
+}

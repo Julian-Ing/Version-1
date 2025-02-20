@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    width: 5%;
+}
+
+h1:hover{
+    color: blue;
+}
+
+h1:hover::first-letter{
+    color: black;
+}
