@@ -1,0 +1,1034 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 100vh repeat(4, 100vh) repeat(3, 129vh) 340px 30px;
+    grid-template-areas:
+        "header"
+        "A"
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "B"
+        "C"
+        "D"
+        "footer"
+        "under_bar"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: red;
+}
+
+header #contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header #contenido h2 {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+header #contenido nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in;
+    transform: translateX(100%);
+}
+
+header #contenido .hamb {
+    display: block;
+    font-size: 25px;
+    margin-right: 20px;
+    color: black;
+}
+
+header #contenido nav a {
+    margin-left: 25px;
+}
+
+#A {
+    grid-area: A;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#A #contenido-A {
+    max-width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+#A #contenido-A hr {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 15px auto;
+}
+
+#A #contenido-A #boton {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 70px;
+    margin-top: 15px;
+}
+
+
+#uno {
+    grid-area: uno;
+    background-color: rgb(19, 33, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uno #contenido-uno {
+    margin: 15px;
+    color: white;
+    text-align: center;
+}
+
+#uno #contenido-uno h3 {
+    margin-bottom: 10px;
+}
+
+#uno #contenido-uno #botonUno {
+    width: 35px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#dos {
+    grid-area: dos;
+    background-color: rgb(41, 55, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dos #contenido-dos {
+    margin: 15px;
+    color: white;
+    text-align: center;
+}
+
+#dos #contenido-dos h3 {
+    margin-bottom: 10px;
+}
+
+#dos #contenido-dos #botondos {
+    width: 35px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#tres {
+    grid-area: tres;
+    background-color: rgb(151, 40, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tres #contenido-tres {
+    margin: 15px;
+    color: white;
+    text-align: center;
+}
+
+#tres #contenido-tres h3 {
+    margin-bottom: 10px;
+}
+
+#tres #contenido-tres #botontres {
+    width: 35px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#cuatro {
+    grid-area: cuatro;
+    background-color: rgb(113, 111, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cuatro #contenido-cuatro {
+    margin: 15px;
+    color: white;
+    text-align: center;
+}
+
+#cuatro #contenido-cuatro h3 {
+    margin-bottom: 10px;
+}
+
+#cuatro #contenido-cuatro #botoncuatro {
+    width: 35px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#B {
+    grid-area: B;
+    background-color: rgb(35, 99, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#B #contenido-B {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#B #contenido-B #textoB {
+    padding: 20px;
+}
+
+#textoB h2 {
+    margin-bottom: 10px;
+}
+
+#textoB hr {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 15px auto;
+}
+
+#textoB #botonB {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#imagenB img {
+    width: 100%;
+    padding: 10px;
+}
+
+
+#C {
+    grid-area: C;
+    background-color: rgb(197, 135, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#C #contenido-C {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#C #contenido-C #textoC {
+    padding: 20px;
+}
+
+#textoC h2 {
+    margin-bottom: 10px;
+}
+
+#textoC hr {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 15px auto;
+}
+
+#textoC #botonC {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+#imagenC img {
+    width: 100%;
+    padding: 10px;
+}
+
+
+#D {
+    grid-area: D;
+    background-color: rgb(114, 228, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#D #contenido-D {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#D #contenido-D #textoD {
+    padding: 20px;
+}
+
+#textoD h2 {
+    margin-bottom: 10px;
+}
+
+#textoD hr {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 15px auto;
+}
+
+#textoD #botonD {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#imagenD img {
+    width: 100%;
+    padding: 10px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: rgb(224, 228, 114);
+    padding: 10px;
+}
+
+#footer #datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #datos #textarea {
+    width: 50vw auto;
+    height: 25vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#footer #datos nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+#footer #redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#footer #redes ul {
+    list-style: none;
+    margin-top: 15px;
+    font-size: 30px;
+    display: flex;
+}
+
+#footer #redes ul li {
+    margin-bottom: 15px;
+}
+
+#footer #redes ul li a {
+    margin: 0 7.5px;
+}
+
+#under_bar {
+    grid-area: under_bar;
+    background-color: rgb(228, 131, 114);
+    text-align: center;
+    padding: 5px;
+}
+
+#config {
+    grid-area: config;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: none;
+}
+
+
+/*  TABLET */
+@media (min-width: 480px) and (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 60vh repeat(2, 40vh) repeat(3, 65vh) 60vh 30px;
+        grid-template-areas:
+            "header header"
+            "A A"
+            "uno dos"
+            "tres cuatro"
+            "B B"
+            "C C"
+            "D D"
+            "footer footer"
+            "under_bar under_bar"
+        ;
+    }
+
+    header {
+        grid-area: header;
+        background-color: red;
+    }
+
+    header #contenido h2 {
+        padding: 12px;
+    }
+
+    header #contenido nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all ease-in;
+        transform: translateX(100%);
+    }
+
+    header #contenido .hamb {
+        display: block;
+        font-size: 25px;
+        margin-right: 20px;
+        color: black;
+    }
+
+    #B {
+        grid-area: B;
+        background-color: rgb(35, 99, 98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #B #contenido-B {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #B #contenido-B #textoB {
+        margin-bottom: 20px;
+    }
+
+    #textoB h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    #textoB hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 15px auto;
+    }
+
+    #textoB #botonB {
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 70px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #B #contenido-B #imagenB {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    #imagenB img {
+        width: 40vw;
+        height: 40vh;
+        margin-left: 10px;
+    }
+
+    #C {
+        grid-area: C;
+        background-color: rgb(197, 135, 184);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #C #contenido-C {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #C #contenido-C #textoC {
+        margin-bottom: 20px;
+    }
+
+    #textoC h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    #textoC hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 15px auto;
+    }
+
+    #textoC #botonC {
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 70px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #C #contenido-C #imagenC {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    #imagenC img {
+        width: 40vw;
+        height: 40vh;
+        margin-left: 10px;
+    }
+
+
+    #D {
+        grid-area: D;
+        background-color: rgb(114, 228, 226);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #D #contenido-D {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #D #contenido-D #textoD {
+        margin-bottom: 20px;
+    }
+
+    #textoD h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    #textoD hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 15px auto;
+    }
+
+    #textoD #botonD {
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 70px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #D #contenido-D #imagenD {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    #imagenD img {
+        width: 40vw;
+        height: 40vh;
+        margin-left: 10px;
+    }
+
+    #footer {
+        grid-area: footer;
+        background-color: rgb(224, 228, 114);
+        padding: 10px;
+    }
+
+    #footer #datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer #datos #textarea {
+        width: 250px;
+        height: 25vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #footer #datos nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+
+    #footer #redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    #footer #redes ul {
+        list-style: none;
+        margin-top: 15px;
+        font-size: 30px;
+        display: flex;
+    }
+
+    #footer #redes ul li {
+        margin-bottom: 15px;
+    }
+
+    #footer #redes ul li a {
+        margin: 0 7.5px;
+    }
+
+}
+
+/*  DESKTOP  9 */
+@media (min-width: 769px) {
+    #container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px 10vh 70vh 200px repeat(3, 350px) 200px 50px;
+        grid-template-areas:
+            "config config config config"
+            "header header header header"
+            "A A A A"
+            "uno dos tres cuatro"
+            "B B B B"
+            "C C C C"
+            "D D D D"
+            "footer footer footer footer"
+            "under_bar under_bar under_bar under_bar"
+        ;
+    }
+
+    #config {
+        display: block;
+    }
+
+    header {
+        grid-area: header;
+        background-color: red;
+        padding: 10px;
+    }
+
+    header #contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header #contenido h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    header #contenido #logo {
+        width: 100%;
+        padding: 0;
+        margin: 10px;
+    }
+
+    header #contenido nav {
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        transform: none;
+        margin-right: 15px;
+    }
+
+    header #contenido .hamb {
+        display: none;
+    }
+
+    header #contenido nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    #A {
+        grid-area: A;
+        background-color: green;
+        display: flex;
+    }
+
+    #A #contenido-A {
+        width: 100%;
+        margin: 50px;
+        text-align: left;
+    }
+
+    #A #contenido-A h1 {
+        font-size: 40px;
+    }
+
+    #A #contenido-A p {
+        max-width: 45%;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    #A #contenido-A hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 15px 0;
+    }
+
+    #A #contenido-A #boton {
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 70px;
+        height: 35px;
+        margin-top: 15px;
+    }
+
+    #B {
+        grid-area: B;
+        background-color: rgb(35, 99, 98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #B #contenido-B {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: space-between;
+    }
+
+    #textoB {
+        width: 100%;
+    }
+
+    #B #contenido-B #textoB {
+        margin: 20px auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    #textoB h2 {
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    #textoB p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        width: 70%;
+    }
+
+    #textoB hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 25px 0 10px 0;
+    }
+
+    #textoB #botonB {
+        border: 2px solid black;
+        border-radius: 6px;
+        width: 70px;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #imagenB {
+        position: static;
+        top: 50px;
+        right: 100px;
+    }
+
+    #B #contenido-B #imagenB {
+        margin-bottom: 20px;
+        margin-top: 55px;
+    }
+
+    #imagenB img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    #C {
+        grid-area: C;
+        background-color: rgb(197, 135, 184);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #C #contenido-C {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: space-between;
+    }
+
+    #textoC {
+        width: 100%;
+    }
+
+    #C #contenido-C #textoC {
+        margin: 20px auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    #textoC p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        width: 70%;
+    }
+
+    #textoC h2 {
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    #textoC hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 25px 0 10px 0;
+    }
+
+    #textoC #botonC {
+        border: 2px solid black;
+        border-radius: 6px;
+        width: 70px;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #imagenC {
+        position: static;
+        top: 50px;
+        right: 100px;
+    }
+
+    #C #contenido-C #imagenC {
+        margin-bottom: 20px;
+        margin-top: 55px;
+    }
+
+    #imagenC img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+
+    #D {
+        grid-area: D;
+        background-color: rgb(114, 228, 226);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #D #contenido-D {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: space-between;
+    }
+
+    #textoD {
+        width: 100%;
+    }
+
+    #D #contenido-D #textoD {
+        margin: 20px auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    #textoD p {
+        margin-bottom: 10px;
+        font-size: 20px;
+        width: 70%;
+    }
+
+    #textoD h2 {
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    #textoD hr {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        border: none;
+        margin: 25px 0 10px 0;
+    }
+
+    #textoD #botonD {
+        border: 2px solid black;
+        border-radius: 6px;
+        width: 70px;
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    #imagenD {
+        position: static;
+        top: 50px;
+        right: 100px;
+    }
+
+    #D #contenido-D #imagenD {
+        margin-bottom: 20px;
+        margin-top: 55px;
+    }
+
+    #imagenD img {
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    #footer {
+        display: flex;
+        grid-area: footer;
+        background-color: rgb(224, 228, 114);
+    }
+
+    #footer #datos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    #textarea {
+        position: relative;
+        width: 250px;
+        height: 25vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+
+    #footer #datos nav {
+        display: flex;
+        align-items: last baseline;
+        flex-direction: column;
+        line-height: 2.0;
+    }
+
+    #footer #redes {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 500px auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer #redes ul {
+        list-style: none;
+        margin-top: 50px;
+        margin-left: 50px auto;
+        font-size: 30px;
+        display: flex;
+    }
+
+    #footer #redes ul li {
+        margin-bottom: 15px;
+    }
+
+    #footer #redes ul li a {
+        margin: 0 7.5px;
+    }
+
+    #under_bar {
+        grid-area: under_bar;
+        background-color: rgb(228, 131, 114);
+        text-align: left;
+        padding-left: 110px;
+        padding-top: 15px;
+    }
+
+}
