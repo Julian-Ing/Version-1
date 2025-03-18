@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#caja{
+    width: 30vw;
+    height: 25vh;
+    border: solid red;
+    /* background-image: linear-gradient(to bottom, yellow, blue, red) */
+    /* background-image: radial-gradient(circle, yellow, blue, red) */
+    /* transform: translate(100px, 200px); */
+    /* transform: rotate(60deg); */
+    /* transform: scale(0.5,3); */
+    transition: 2s;
+}
+
+#caja:hover{
+        transform: scale(3,3);
+        background-image: radial-gradient(ellipse, yellow, blue, red);
+}
